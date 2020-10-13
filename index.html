@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lan="es">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>My Blog</title>
 </head>
 <body>
-    <main class="container">
-    <header class="header">
+    <header id="header"> <!--cabecera-->
      <nav class="header-nav">
-         <div class="header-nav-left">
+          <!--barra de navegación izquierda-->
+          <ul class="header-nav-left">
+            <li><a href="#">Sobre mi</a></li>
+             <li><a href="#">Mis proyectos</li></a>
+         </ul>
+         <!--barra de navegación derecha-->
+         <ul class="header-nav-right"> 
+         <li>
          <a href="https://github.com/Vianam92">
          <figure class="header-nav-github">
              <img src="img/github.png" Alt="" class="github">
-         </figure></a>
-         <a href="https://www.linkedin.com/in/mariana-viana-rodriguez-19871a195/">
+         </figure></a></li>
+         <li><a href="https://www.linkedin.com/in/mariana-viana-rodriguez-19871a195/">
          <figure class="header-nav-linkedin">
              <img src="img/linkedin.png" Alt="linkedin" class="linkedin">
-         </figure></a>
-        </div>
-        <a href="#" class="hover-unicornio">
+         </figure></a></li>
+         <li><a href="#" class="hover-unicornio">
             <figure class="header-nav-Unicornio">
             <img class="Unicornio" src="img/uni.webp" Alt="Unicornio">
-             </figure></a>
-     </nav>
+             </figure></a></li></ul>
+            
+            </nav>
     </header>
-    <section class="section1">
+
+    <main id="container"> <!--contenedor-->
+
+    <section id="section1"> <!--section 1-->
         <div class="container-section1">
             <span class="container-name"><h1>Vianam</h1></span>
             <span class="container-description">
                 <p>Hello World, <br>
-                esta es mi primera pagina web, en el año 2019 
-            gracias a una amiga descubri el mundo de la programación 
-        y cada vez que voy aprendiendo y conociendo más,
-        me parece apasionante.</p></span>
+                esta es mi primera pagina web, en el año 2019<br> 
+                gracias a una amiga descubri el mundo de la programación<br> 
+                y cada vez que voy aprendiendo y conociendo más,<br>
+                me parece apasionante.</p></span>
         </div>
     </section>
-    <section class="section2">
+     
+    <section class="section2"><!--section 2-->
     <div class="article1">
         <article>
             <a href="#">
@@ -58,11 +68,12 @@
     </div>
     </section>
     </main>
+    <!--footer-->
     <footer class="footer">
     <div class="footer-bye">
-        <h6>Gracias por visitar mi blog</h6>
+        <h5>Gracias por visitar mi blog</h6>
     </div>
-    </footer>
+</footer>
     <div class="years"><p>@2020</p></div>
     
 </body>
